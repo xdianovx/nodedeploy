@@ -1,0 +1,180 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0_p 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  color: #ffffff;
+  background: #465f75;
+  border: none;
+  border-radius: 6px;
+  margin: 0;
+  cursor: pointer;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #132739;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 20px 20px;
+  background-color: #1d3143;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li:before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  transition: all 0.3s;
+  background-color: #fff;
+  right: 0;
+}
+
+nav li:hover:before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__search {
+  margin-right: 30px;
+}
+
+.table {
+  margin-top: 60px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.table__head {
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 20px;
+}
+
+.btn-green {
+  background: #35c274;
+}
+
+.column__id {
+  width: 30px;
+  text-align: center;
+}
+.column__image {
+  width: 100px;
+  text-align: center;
+}
+
+.column__name {
+  width: 600px;
+  text-align: left;
+}
+
+.column__name_item {
+  text-align: left;
+}
+.column__price {
+  text-align: center;
+  width: 120px;
+}
+
+.column__count {
+  text-align: center;
+  width: 220px;
+}
+
+.column__button {
+  text-align: center;
+  width: 100px;
+}
+
+.table__item {
+  padding: 10px 0;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.column__image_item img {
+  width: 40px;
+  height: 40px;
+}
+
+.contacts {
+  margin-top: 60px;
+}
